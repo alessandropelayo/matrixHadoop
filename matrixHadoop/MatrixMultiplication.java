@@ -1,4 +1,3 @@
-package main.java.com.projHadoop.main;
 
 import java.io.IOException;
 import java.util.HashMap;
