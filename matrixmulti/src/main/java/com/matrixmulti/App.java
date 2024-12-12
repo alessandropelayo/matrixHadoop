@@ -20,14 +20,18 @@ public final class App {
                       {66, 7, 2, 4}};   
         */
 
-        List<int[][]> matrices = readMatrices("100.in");
+        List<int[][]> matrices = readMatrices("dataset");
 
         long startTime = System.currentTimeMillis();
         int[][] result = multiplyMatrix(matrices.get(0), matrices.get(1));
+
+        for (int i = 2; i < matrices.size(); i++) {
+            multiplyMatrix(result, matrices.get(i));
+        }
         long endTime = System.currentTimeMillis();
         long duration = endTime - startTime;
 
-        printMatrix(result);
+        //printMatrix(result);
         System.out.println("Matrix multiplication execution time: " + duration + " ms.");
     }    
 
