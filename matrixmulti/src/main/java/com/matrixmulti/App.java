@@ -26,7 +26,7 @@ public final class App {
         int[][] result = multiplyMatrix(matrices.get(0), matrices.get(1));
 
         for (int i = 2; i < matrices.size(); i++) {
-            multiplyMatrix(result, matrices.get(i));
+            result = multiplyMatrix(result, matrices.get(i));
         }
         long endTime = System.currentTimeMillis();
         long duration = endTime - startTime;
