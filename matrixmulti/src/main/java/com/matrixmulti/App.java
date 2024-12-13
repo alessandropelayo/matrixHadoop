@@ -19,7 +19,7 @@ public final class App {
                       {66, 7, 2, 4}};   
         */
 
-        ArrayList<long[][]> matrices = readMatrices("/home/hadoopusr/matrixmulti/matrixHadoop/dataset");
+        ArrayList<long[][]> matrices = readMatrices("dataset");
 
         long startTime = System.currentTimeMillis();
         long[][] result = multiplyMatrix(matrices.get(0), matrices.get(1));
